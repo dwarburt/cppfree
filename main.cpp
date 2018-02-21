@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    std::string numerals = "XVII";
+    std::string numerals = "XLX";
     int val = 0;
     int sum = 0;
     int prev = 0;
