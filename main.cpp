@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    std::string numerals = "XLX";
+    std::string numerals = "IIX";
     int val = 0;
     int sum = 0;
     int prev = 0;
@@ -22,16 +22,21 @@ int main() {
                 val = 50;
                 break;
         }
-        if (prev != 0) {
+  if (prev != 0) {
             if (prev > val) {
                 sum += prev;
             } else if (prev == val) {
-                sum += prev;
+                sum +-= prev;
+                threshold++;
+                
             } else {
                 sum -= prev;
+                if (threshold > 1) {
+                    cerr << "Failed threshold test" << endl;
+                    return -1;
+                }
             }
-        }
-        prev = val;
+        }        prev = val;
     }
     sum += prev;
     cout << "Result: " << sum  << endl;
