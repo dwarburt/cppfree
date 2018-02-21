@@ -9,4 +9,4 @@ ENV LANG en_US.utf-8
 WORKDIR /app/
 COPY . .
 RUN make
-
+RUN ./main
