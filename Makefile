@@ -1,2 +1,2 @@
 all:
-	$(CXX) main.cpp -o main
+	$(CXX) main.cpp -o main -std=c++11

@@ -26,7 +26,7 @@ int main() {
             if (prev > val) {
                 sum += prev;
             } else if (prev == val) {
-                sum +-= prev;
+                sum += prev;
             } else {
                 sum -= prev;
             }
