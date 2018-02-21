@@ -7,6 +7,7 @@ int main() {
     int val = 0;
     int sum = 0;
     int prev = 0;
+    int threshold = 0;
     for(char& c : numerals) {
         switch (c) {
             case 'I':
@@ -22,7 +23,7 @@ int main() {
                 val = 50;
                 break;
         }
-  if (prev != 0) {
+        if (prev != 0) {
             if (prev > val) {
                 sum += prev;
             } else if (prev == val) {
